@@ -41,16 +41,18 @@ if (!$result = $mysqli->query($sql)) {
     echo "Query: " . $sql . "\n";
     echo "Errno: " . $mysqli->errno . "\n";
     echo "Error: " . $mysqli->error . "\n";
-    	$activityType = '1';
-	$activityTitle = 'Query execution error';
-	updateActivity($activityType,$activityTitle);
+    // Log info to database
+    $activityType = '1';
+    $activityTitle = 'Query execution error';
+    updateActivity($activityType,$activityTitle);
     exit();
     // If debug isn't enabled, show an error message
 	} else {
     echo "Error while connecting to database.";
+    // Log info to database
     $activityType = '1';
-	$activityTitle = 'Query execution error';
-	updateActivity($activityType,$activityTitle);
+    $activityTitle = 'Query execution error';
+    updateActivity($activityType,$activityTitle);
     exit();
 	}
 }
@@ -58,9 +60,10 @@ if (!$result = $mysqli->query($sql)) {
 if ($result->num_rows === 0) {
 	// Print an error message
     echo "Your license code isn't valid. Please check again or <a href=\"" . $supporturl . "\">contact support</a>.";
+    // Log info to database
     $activityType = '2';
-	$activityTitle = 'Invalid license: ' . $license;
-	updateActivity($activityType,$activityTitle);
+    $activityTitle = 'Invalid license: ' . $license;
+    updateActivity($activityType,$activityTitle);
     exit();
 }
 // Print debug info if debug is enabled
@@ -73,8 +76,9 @@ $userdata = $result->fetch_assoc();
 if ($debug) {
 	echo $userdata;
 }
+// Log info to database
 $activityType = '3';
-	$activityTitle = 'Valid license: ' . $license;
-	updateActivity($activityType,$activityTitle);
+$activityTitle = 'Valid license: ' . $license;
+updateActivity($activityType,$activityTitle);
 // Return the array
 return $userdata;
