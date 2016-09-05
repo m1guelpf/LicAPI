@@ -12,15 +12,23 @@ LicAPI is an script that allows you to check if your product's license is valid 
 
 ## Installation:
 
-1. Upload all the files to your server.
-2. Create a MySQL Database.
-3. Import database info from licapi.sql.
-4. Open config.php, fill your database info and change $debug = false; to $debug = true;
-5. Run the script with license test (do api.php?license=test).
-6. If the script doesn't show any errors, you're OK!
-7. REMEMBER TO TURN $debug BACK TO false!!!
-8. Change the demo info in database with your own custom info.
-9. Enjoy!
+- Upload all the files to your server.
+- Create a MySQL Database.
+- Import database info from licapi.sql.
+- Open config.php, fill your database info and change
+```php
+$debug = false;
+``` 
+
+to
+```php
+$debug = true;
+```
+- Run the script with license test (do api.php?license=test).
+- If the script doesn't show any errors, you're OK!
+- REMEMBER TO TURN $debug BACK TO false!!!
+- Change the demo info in database with your own custom info.
+- Enjoy!
 
 ## Credits:
 
