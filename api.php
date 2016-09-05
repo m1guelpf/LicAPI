@@ -33,7 +33,7 @@ if ($debug){
 	echo "Loaded license " . $license . " by " . $protocol . ".<br>";
 }
 // SQL Query to check if license exists
-$sql = "SELECT * FROM license_data WHERE purchase_code=$license";
+$sql = "SELECT * FROM license_data WHERE purchase_code='$license'";
 // If query fails...
 if (!$result = $mysqli->query($sql)) {
 	// Print debug info if debug is enabled
