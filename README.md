@@ -26,7 +26,7 @@ $debug = true;
 ```
 - Run the script with license test (do api.php?license=test).
 - If the script doesn't show any errors, you're OK!
-- REMEMBER TO TURN $debug BACK TO false!!!
+- **REMEMBER TO TURN $debug BACK TO false!!!**
 - Change the demo info in database with your own custom info.
 - Enjoy!
 
