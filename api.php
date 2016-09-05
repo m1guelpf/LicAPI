@@ -3,6 +3,10 @@
 include ('config.php');
 // Include functions.php file
 include ('functions.php');
+// Start a session if there isn't any
+if(!isset($_SESSION)) session_start();
+// Get User's IP address
+$actIp = $_SERVER['REMOTE_ADDR'];
 // If license is posted by GET...
 if (isset($_GET['license'])){
 // Set $protocol to GET
@@ -37,10 +41,16 @@ if (!$result = $mysqli->query($sql)) {
     echo "Query: " . $sql . "\n";
     echo "Errno: " . $mysqli->errno . "\n";
     echo "Error: " . $mysqli->error . "\n";
+    	$activityType = '1';
+	$activityTitle = 'Query execution error';
+	updateActivity($activityType,$activityTitle);
     exit();
     // If debug isn't enabled, show an error message
 	} else {
     echo "Error while connecting to database.";
+    $activityType = '1';
+	$activityTitle = 'Query execution error';
+	updateActivity($activityType,$activityTitle);
     exit();
 	}
 }
@@ -48,6 +58,9 @@ if (!$result = $mysqli->query($sql)) {
 if ($result->num_rows === 0) {
 	// Print an error message
     echo "Your license code isn't valid. Please check again or <a href=\"" . $supporturl . "\">contact support</a>.";
+    $activityType = '2';
+	$activityTitle = 'Invalid license: ' . $license;
+	updateActivity($activityType,$activityTitle);
     exit();
 }
 // Print debug info if debug is enabled
@@ -60,5 +73,8 @@ $userdata = $result->fetch_assoc();
 if ($debug) {
 	echo $userdata;
 }
+$activityType = '3';
+	$activityTitle = 'Valid license: ' . $license;
+	updateActivity($activityType,$activityTitle);
 // Return the array
 return $userdata;
