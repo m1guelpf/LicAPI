@@ -26,13 +26,14 @@ $protocol = "NONE";
 // Set license to FREE
 $license = "FREE";
 }
+// Clean $license
+$license = $mysqli->real_escape_string($license);
 // Print debug info if debug is enabled
 if ($debug){
 	echo "Loaded license " . $license . " by " . $protocol . ".<br>";
 }
 // SQL Query to check if license exists
-$sql = sprintf("SELECT * FROM license_data WHERE purchase_code='%s'",
-            mysql_real_escape_string($license));
+$sql = "SELECT * FROM license_data WHERE purchase_code=$license";
 // If query fails...
 if (!$result = $mysqli->query($sql)) {
 	// Print debug info if debug is enabled
@@ -68,7 +69,7 @@ if ($result->num_rows === 0) {
 }
 // Print debug info if debug is enabled
 if ($debug){
-	echo "License " . $license . " exists in server.<br>"
+	echo "License " . $license . " exists in server.<br>";
 }
 // Make an array with all user data
 $userdata = $result->fetch_assoc();
