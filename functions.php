@@ -1,4 +1,9 @@
 <?php
+	/*
+     * Function to format Time
+     *
+     * @param string $v		 	The date to format
+     */
 	function dateTimeFormat($v) {
 		$theDateTime = date("F d, Y g:i a",strtotime($v));		// September 5, 2016 9:14 pm
 		return $theDateTime;
