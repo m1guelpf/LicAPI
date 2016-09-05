@@ -75,7 +75,7 @@ if ($debug){
 $userdata = $result->fetch_assoc();
 // Print obtained data if debug is enabled
 if ($debug) {
-	echo $userdata;
+	echo '<pre>'; print_r($userdata); echo '</pre>';
 }
 // Log info to database
 $activityType = '3';
