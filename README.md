@@ -28,4 +28,4 @@ LicAPI is an script that allows you to check if your product's license is valid 
 - PHP
 - MySQLi
 
-Copyright (C) Miguel Piedrafita. Use of this work is subject to license.
+Copyright (C) Miguel Piedrafita. Use of this work is subject to Mozilla Public License 2.0
