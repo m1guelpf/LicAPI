@@ -7,7 +7,7 @@ LicAPI is an script that allows you to check if your product's license is valid 
 
 ## Demo:
 
-You can see a demo of the script at [https://demo.miguelpiedrafita.com/licapi/?license=](https://demo.miguelpiedrafita.com/licapi/?license=).
+You can see a demo of the script at [https://demo.miguelpiedrafita.com/licapi/?license=](https://demo.miguelpiedrafita.com/licapi/?license=)
 
 Valid license: test
 ## Requirements:
