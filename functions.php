@@ -44,4 +44,12 @@
 		$stmt->execute();
 		$stmt->close();
 	}
+	/*
+     * Function to set Page Title
+     *
+     * @param string $title		 	The title to set
+     */
+	function pagetitle($title) {
+	echo "<head><title>" . $title . "</title></head>";
+		}
 ?>
