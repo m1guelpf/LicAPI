@@ -9,7 +9,6 @@ LicAPI is an script that allows you to manage, verify and return data from your 
 
 You can see a demo of the script at [https://demo.miguelpiedrafita.com/licapi/logs.php](https://demo.miguelpiedrafita.com/licapi/logs.php) or test the verification function at [https://demo.miguelpiedrafita.com/licapi/test.html](https://demo.miguelpiedrafita.com/licapi/test.html) or by GET at [https://demo.miguelpiedrafita.com/licapi/api.php?license=](https://demo.miguelpiedrafita.com/licapi/api.php?license=).
 
-Valid license: test
 ## Requirements:
 
 - PHP >4.1
