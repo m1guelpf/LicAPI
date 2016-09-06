@@ -3,11 +3,11 @@ A PHP API to manage license info
 
 ## What is LicAPI?
 
-LicAPI is an script that allows you to check if your product's license is valid and get all the info from the license.
+LicAPI is an script that allows you to manage, verify and return data from your licenses.
 
 ## Demo:
 
-You can see a demo of the script at [https://demo.miguelpiedrafita.com/licapi/test.html](https://demo.miguelpiedrafita.com/licapi/test.html) or post a license by GET to [https://demo.miguelpiedrafita.com/licapi/?license](https://demo.miguelpiedrafita.com/licapi/?license)
+You can see a demo of the script at [https://demo.miguelpiedrafita.com/licapi/logs.php](https://demo.miguelpiedrafita.com/licapi/logs.php) or test the verification function at [https://demo.miguelpiedrafita.com/licapi/test.html](https://demo.miguelpiedrafita.com/licapi/test.html) or by GET at [https://demo.miguelpiedrafita.com/licapi/api.php?license=](https://demo.miguelpiedrafita.com/licapi/api.php?license=).
 
 Valid license: test
 ## Requirements:
