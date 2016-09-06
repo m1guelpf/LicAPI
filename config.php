@@ -6,7 +6,7 @@ $dbpass = 'root'; // Your database password
 $dbname = 'data'; // Your database name
 $supporturl = 'https://miguelpiedrafita.com#contact';
 date_default_timezone_set('Europe/Madrid'); // Your timezone
-if (!debug){
+if (!$debug){
 	error_reporting(0);
 	ini_set('display_errors', '0');
 }
