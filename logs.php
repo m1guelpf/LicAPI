@@ -25,15 +25,20 @@ if (!$result = $mysqli->query($sql)) {
 // Show a header
 echo "<center><h1>License Data</h1></center>\n";
 // Start an HTML list
-echo "<tr>\n";
+echo "<table><tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>License</th>
+    <th>URL</th>
+  </tr>\n";
 // For every license data, show all info with a link to license
 while ($userdata = $result->fetch_assoc()) {
-    echo "<td>\n";
-    echo $userdata['first_name'] . ' ' . $userdata['last_name'] . ' ' . "<a href='api.php?license=" . $userdata['purchase_code'] . "'>" . $userdata['purchase_code'] . "</a>" . ' ' . "<a href='" . $userdata['URL'] . "'>" . $userdata['URL'] . "</a>";
-    echo "</td>\n";
+    echo "<tr>\n";
+    echo "<td>" . $userdata['first_name'] . "</td><td>" . $userdata['last_name'] . "</td><td>" . "<a href='api.php?license=" . $userdata['purchase_code'] . "'>" . $userdata['purchase_code'] . "</a>" . "</td><td>" . "<a href='" . $userdata['URL'] . "'>" . $userdata['URL'] . "</a>" . "</td>";
+    echo "</tr>\n";
 }
 // Close the HTML List
-echo "</tr>\n";
+echo "</table>\n";
 echo "<br>\n";
 echo "<center>";
 echo "<h3><a href='add.php'>Add a license</a>";
