@@ -50,6 +50,6 @@
      * @param string $title		 	The title to set
      */
 	function pagetitle($title) {
-	echo "<head><title>" . $title . "</title></head>";
+	echo "<head><title>" . $title . "</title><link rel='stylesheet' type='text/css' href='css/style.css'></head>";
 		}
 ?>
