@@ -7,6 +7,8 @@ include ('functions.php');
 if(!isset($_SESSION)) session_start();
 // Get User's IP address
 $actIp = $_SERVER['REMOTE_ADDR'];
+// Set a page title
+pagetitle("Check - LicAPI");
 // If license is posted by GET...
 if (isset($_GET['license'])){
 // Set $protocol to GET
