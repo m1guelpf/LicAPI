@@ -65,15 +65,15 @@ if (!$result = $mysqli->query($sql)) {
 // Show a header
 echo "<center>\n<h1>Delete a license</h1>\n</center>\n";
 // Start an HTML list
-echo "<ul>\n";
+echo "<tr>\n";
 // For every license data, show all info with a link to delete it
 while ($userdata = $result->fetch_assoc()) {
-    echo "<li><a href='delete.php?license=" . $userdata['purchase_code'] . "'>\n";
+    echo "<td><a href='delete.php?license=" . $userdata['purchase_code'] . "'>\n";
     echo $userdata['first_name'] . ' ' . $userdata['last_name'] . ' ' . $userdata['purchase_code'] . ' ' . $userdata['URL'];
-    echo "</a></li>\n";
+    echo "</a></td>\n";
 }
 // Close the HTML List
-echo "</ul>\n";
+echo "</tr>\n";
 echo "<br>\n";
 echo "<center><h3>" . $msg . "</h3></center>\n";
 echo "<br><br>\n";
