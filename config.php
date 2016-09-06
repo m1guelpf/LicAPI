@@ -4,6 +4,7 @@ $dbhost = 'localhost'; // Your database host (usually localhost)
 $dbuser = 'root'; // Your database username
 $dbpass = 'root'; // Your database password
 $dbname = 'data'; // Your database name
+$supporturl = 'https://miguelpiedrafita.com#contact';
 date_default_timezone_set('Europe/Madrid'); // Your timezone
 if (!debug){
 	error_reporting(0);
