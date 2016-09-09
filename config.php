@@ -1,9 +1,9 @@
 <?php
-$debug = false; // NEVER enable debug in production!!
+$debug = true; // NEVER enable debug in production!!
 $dbhost = 'localhost'; // Your database host (usually localhost)
 $dbuser = 'root'; // Your database username
 $dbpass = 'root'; // Your database password
-$dbname = 'data'; // Your database name
+$dbname = 'licapi'; // Your database name
 $supporturl = 'https://miguelpiedrafita.com#contact';
 date_default_timezone_set('Europe/Madrid'); // Your timezone
 if (!$debug){

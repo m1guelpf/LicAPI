@@ -1,5 +1,15 @@
 <?php
 	/*
+     * Function to logout.
+     *
+     */
+	function logout() {
+		setcookie ("licapi[username]", "", time() - 3600);
+		setcookie ("licapi[useragent]", "", time() - 3600);
+		header("Location: login.php");
+		exit();
+	}
+	/*
      * Function to format Time
      *
      * @param string $v		 	The date to format
@@ -45,11 +55,11 @@
 		$stmt->close();
 	}
 	/*
-     * Function to set Page Title
+     * Function to insert HEAD on all PHP pages.
      *
      * @param string $title		 	The title to set
      */
-	function pagetitle($title) {
+	function head($title) {
 	echo "<head><title>" . $title . "</title><link rel='stylesheet' type='text/css' href='css/style.css'></head>";
 		}
 ?>

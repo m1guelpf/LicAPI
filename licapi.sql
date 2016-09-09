@@ -50,13 +50,32 @@ CREATE TABLE IF NOT EXISTS `license_data` (
   `URL` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+-- --------------------------------------------------------
 
+--
+-- Estructura de tabla para la tabla `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `ID` int(5) NOT NULL AUTO_INCREMENT,
+  `username` text NOT NULL,
+  `password` text NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+ 
 --
 -- Volcado de datos para la tabla `license_data`
 --
 
 INSERT INTO `license_data` (`ID`, `first_name`, `last_name`, `purchase_code`, `URL`) VALUES
 (1, 'Miguel', 'Piedrafita', 'test', 'https://miguelpiedrafita.com');
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`ID`, `username`, `password`) VALUES
+(1, 'licapi', '$2y$10$nH3NHqVsO.sbGGjGrJ9oIeJb2tfQyuFDTfTLOATd/jaFK.QBGQm.W');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

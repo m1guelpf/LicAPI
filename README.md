@@ -7,7 +7,7 @@ LicAPI is an script that allows you to manage, verify and return data from your 
 
 ## Demo:
 
-You can see a demo of the script at [https://demo.miguelpiedrafita.com/licapi/logs.php](https://demo.miguelpiedrafita.com/licapi/logs.php) or test the verification function at [https://demo.miguelpiedrafita.com/licapi/test.html](https://demo.miguelpiedrafita.com/licapi/test.html) or by GET at [https://demo.miguelpiedrafita.com/licapi/api.php?license=](https://demo.miguelpiedrafita.com/licapi/api.php?license=).
+You can see a demo of the script at [https://demo.miguelpiedrafita.com/licapi/logs.php](https://demo.miguelpiedrafita.com/licapi/logs.php) using username&password 'licapi' (without the '') or test the verification function at [https://demo.miguelpiedrafita.com/licapi/test.html](https://demo.miguelpiedrafita.com/licapi/test.html) or by GET at [https://demo.miguelpiedrafita.com/licapi/api.php?license=](ttps://demo.miguelpiedrafita.com/licapi/api.php?license=).
 
 ## Requirements:
 
@@ -34,10 +34,14 @@ $debug = true;
 - Change the demo info in database with your own custom info.
 - Enjoy!
 
+## Errors:
+
+All the interesting activity is logged to the table 'activity' with an activityId. The activityId can be used to identify errors in production or to log any strange activity. Only IP Adress, User-Agent, ActivityId and ActivityTitle is logged.
+
 ## Credits:
 
-- Miguel Piedrafita - Script
-- PHP
-- MySQLi
+- [Miguel Piedrafita](https://projects.miguelpiedrafita.com)
+- [PHP](https://php.net)
+- [MySQLi](https://mysql.com)
 
 Copyright (C) Miguel Piedrafita. Use of this work is subject to Mozilla Public License 2.0

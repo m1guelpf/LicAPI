@@ -1,14 +1,14 @@
 <?php
 // Include config.php file
-include ('config.php');
+include 'config.php';
 // Include functions.php file
-include ('functions.php');
+include 'functions.php';
 // Start a session if there isn't any
 if(!isset($_SESSION)) session_start();
 // Get User's IP address
 $actIp = $_SERVER['REMOTE_ADDR'];
 // Set a page title
-pagetitle("Check - LicAPI");
+head("Check - LicAPI");
 // If license is posted by GET...
 if (isset($_GET['license'])){
 // Set $protocol to GET
@@ -23,10 +23,17 @@ $protocol = "POST";
 $license = $_POST['license'];
 // If license isn't posted
 } else {
-// Set $protocol to NONE
-$protocol = "NONE";
-// Set license to FREE
-$license = "FREE";
+// If debug is enabled...
+if ($debug){
+// Print a help message and exit
+echo "A license wasn't entered. If you need support, visit <a href='https://licapi.projects.miguelpiedrafita.com'>the script help page</a>";
+exit();
+// If debug isn't enabled
+} else {
+// Show an error message and a link to support and exit
+echo "You did not enter a license. If you entered a license, please try again. If the error persists, <a href='" . $supporturl . "'>contact support</a>.";
+exit();
+}
 }
 // Clean $license
 $license = $mysqli->real_escape_string($license);
@@ -46,7 +53,7 @@ if (!$result = $mysqli->query($sql)) {
     echo "Error: " . $mysqli->error . "\n";
     // Log info to database
     $activityType = '1';
-    $activityTitle = 'Query execution error';
+    $activityTitle = 'Query execution error (api.php)';
     updateActivity($activityType,$activityTitle);
     exit();
     // If debug isn't enabled, show an error message
@@ -54,7 +61,7 @@ if (!$result = $mysqli->query($sql)) {
     echo "Error while connecting to database.";
     // Log info to database
     $activityType = '1';
-    $activityTitle = 'Query execution error';
+    $activityTitle = 'Query execution error (api.php)';
     updateActivity($activityType,$activityTitle);
     exit();
 	}
