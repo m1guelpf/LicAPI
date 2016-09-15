@@ -1,4 +1,6 @@
 # LicAPI
+[![Code Triagers Badge](https://www.codetriage.com/m1guelpiedrafita/licapi/badges/users.svg)](https://www.codetriage.com/m1guelpiedrafita/licapi)
+
 A PHP API to manage license info
 
 ## What is LicAPI?
