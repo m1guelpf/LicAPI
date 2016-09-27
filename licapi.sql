@@ -53,6 +53,18 @@ CREATE TABLE IF NOT EXISTS `license_data` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `license_data`
+--
+
+CREATE TABLE IF NOT EXISTS `tokens` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `token` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `users`
 --
 
