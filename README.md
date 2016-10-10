@@ -1,6 +1,6 @@
 # LicAPI
 
-[![Code Climate](https://codeclimate.com/github//LicAPI/badges/gpa.svg)](https://codeclimate.com/github/m1guelpiedrafita/LicAPI)
+[![Code Climate](https://codeclimate.com/github/m1guelpiedrafita/LicAPI/badges/gpa.svg)](https://codeclimate.com/github/m1guelpiedrafita/LicAPI)
 
 A PHP API to manage license info
 
