@@ -1,5 +1,6 @@
 # LicAPI
-[![Code Triagers Badge](https://www.codetriage.com/m1guelpiedrafita/licapi/badges/users.svg)](https://www.codetriage.com/m1guelpiedrafita/licapi)
+
+[![Code Climate](https://codeclimate.com/github//LicAPI/badges/gpa.svg)](https://codeclimate.com/github/m1guelpiedrafita/LicAPI)
 
 A PHP API to manage license info
 
