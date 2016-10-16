@@ -45,6 +45,6 @@ All the interesting activity is logged to the table 'activity' with an activityI
 
 - [Miguel Piedrafita](https://projects.miguelpiedrafita.com)
 - [PHP](https://php.net)
-- [MySQLi](https://mysql.com)
+- [MySQL](https://mysql.com)
 
 Copyright (C) Miguel Piedrafita. Use of this work is subject to Mozilla Public License 2.0
