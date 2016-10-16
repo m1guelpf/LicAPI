@@ -25,7 +25,6 @@ $license = $_POST['license'];
 } else {
 $license = "NONE";
 }
-}
 // Clean $license
 $license = $mysqli->real_escape_string($license);
 // SQL Query to check if license exists
