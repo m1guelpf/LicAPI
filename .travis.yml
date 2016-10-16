@@ -4,4 +4,4 @@ php:
   - '5.6'
   - '7.0'
   - '7.1'
-script: phpunit --coverage-text
+script: phpunit --coverage-text && php -l *.php
