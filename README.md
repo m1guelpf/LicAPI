@@ -1,6 +1,6 @@
 # LicAPI
 
-[![Build Status](https://travis-ci.org/m1guelpiedrafita/LicAPI.svg?branch=master)](https://travis-ci.org/m1guelpiedrafita/LicAPI)[![Code Climate](https://codeclimate.com/github/m1guelpiedrafita/LicAPI/badges/gpa.svg)](https://codeclimate.com/github/m1guelpiedrafita/LicAPI)
+[![Build Status](https://travis-ci.org/m1guelpiedrafita/LicAPI.svg?branch=master)](https://travis-ci.org/m1guelpiedrafita/LicAPI)   [![Code Climate](https://codeclimate.com/github/m1guelpiedrafita/LicAPI/badges/gpa.svg)](https://codeclimate.com/github/m1guelpiedrafita/LicAPI)
 
 A PHP API to manage license info
 
