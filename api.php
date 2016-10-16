@@ -91,4 +91,4 @@ $activityType = '3';
 $activityTitle = 'Valid license: ' . $license;
 updateActivity($activityType,$activityTitle);
 // Return the array
-return $userdata;
+echo json_encode($userdata);
