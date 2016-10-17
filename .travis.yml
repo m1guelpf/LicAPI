@@ -12,9 +12,7 @@ php:
 - '7.1'
 script: find . -name \*.php -exec php -l "{}" \;
 after_success:
-  zip -r licapi.zip /home/travis/build/m1guelpiedrafita/LicAPI -x .git/*
-before_deploy:
-  git config --global user.email "soy@miguelpiedrafita.com" && git add licapi.zip && git commit -m "Updated release" && git push
+script: /deploy.sh
 deploy:
   provider: releases
   api_key:
