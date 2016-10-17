@@ -5,8 +5,10 @@ php:
 - '7.0'
 - '7.1'
 script: find . -name \*.php -exec php -l "{}" \;
-before_deploy:
+after_success:
   zip -r licapi.zip /home/travis/build/m1guelpiedrafita/LicAPI -x .git/*
+before_deploy:
+  git add licapi.zip && git commit -m "Updated release" && git push
 deploy:
   provider: releases
   api_key:
