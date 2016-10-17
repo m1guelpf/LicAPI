@@ -32,7 +32,7 @@ $sql = "SELECT * FROM license_data WHERE purchase_code='$license'";
 if (!$result = $mysqli->query($sql)) {
  // Log info to database
     $activityType = '1';
-    $activityTitle = 'Query execution error (json.php)';
+    $activityTitle = 'Query execution error (api.php)';
     updateActivity($activityType,$activityTitle);
 exit();
 }
