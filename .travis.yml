@@ -1,6 +1,6 @@
 env:
   global:
-  - ENCRYPTION_LABEL: "openssl aes-256-cbc -K $encrypted_bdaa12f1ba73_key -iv $encrypted_bdaa12f1ba73_iv -in deploy_key.enc -out deploy_key -d"
+  - ENCRYPTION_LABEL: "bdaa12f1ba73"
   - COMMIT_AUTHOR_EMAIL: "soy@miguelpiedrafita.com"
 before_install:
 openssl aes-256-cbc -K $encrypted_bdaa12f1ba73_key -iv $encrypted_bdaa12f1ba73_iv -in deploy_key.enc -out deploy_key -d
