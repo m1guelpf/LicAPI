@@ -6,7 +6,6 @@ php:
 - '7.1'
 script: find . -name \*.php -exec php -l "{}" \;
 before_deploy:
-  file_glob: true
   script: pwd
   script: zip -r licapi.zip /
 deploy:
