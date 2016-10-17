@@ -12,7 +12,7 @@ php:
 - '7.1'
 script: find . -name \*.php -exec php -l "{}" \;
 after_success:
-script: /deploy.sh
+script: chmod +x deploy.sh && ./deploy.sh
 deploy:
   provider: releases
   api_key:
