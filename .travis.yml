@@ -1,9 +1,3 @@
-env:
-  global:
-  - ENCRYPTION_LABEL: "bdaa12f1ba73"
-  - COMMIT_AUTHOR_EMAIL: "soy@miguelpiedrafita.com"
-before_install:
-script: openssl aes-256-cbc -K $encrypted_bdaa12f1ba73_key -iv $encrypted_bdaa12f1ba73_iv -in deploy_key.enc -out deploy_key -d
 language: php
 php:
 - '5.5'
@@ -11,12 +5,3 @@ php:
 - '7.0'
 - '7.1'
 script: find . -name \*.php -exec php -l "{}" \;
-after_success:
-script: chmod +x deploy.sh && ./deploy.sh
-deploy:
-  provider: releases
-  api_key:
-    secure: CE2gTVq3dDLYcVCMKS8gWfUawEgukmRHSVoKSrI2Mg8oKjgumxzmAMcq0EwMFF6tb88pJ7WeleJL8mOGriPQ9mdQjYJiJCiHGeCsCrm7n5RcYS0bHnOdh23/refpL+Wbww0AG/zscIbRdRDMc8psSEYvjCusznf8kMgNtvPEKBHzjUpM72pGGIGqA0UvbuT/0FsJUnetobWWg5ihuapW8Ws0Pb0mC0uvSxdU15P3Mhlv3KXZ2yaHAMVZnMVUtcBM3Jxm2CUDPrjsnDES7jW8J+cIKmKYCiORbKoVEKKTBdrqtLz9iaFkpYEnHs+89TgXpzwFtCgl2bkDOAnTeNPA8aHsTYAMgiHciHCIErn4LKRyzVyKgbX2Z4clD2VY1scJqCqhLS9JCFoQ3reJp0YML2uPF1YEZo+Bt25fOJMzTH8O7YJzKCaP0DlUR1KFGdic/1vHKKGzpOpvG50G9F8vjQt6PAbVKwD2js6v9QZgYDDvVt+heC3OLqLAIl3CHJxwJEzZYXMckKoZZoqyr2nXt8gS3HMZ3G4iKDMXrN0eDHsWbRXlvnGBybPhDlsI6WykKZ0AcLbGPM6yGG8BpHSkL185V04WpHveRTSnQpWIo7qvvuUUiBmI6IBzPNw1iU9kdGcF/u9cvhX6xXOCqG9Rrf6ma67RwyetxKWjGPy91jg=
-  file: licapi.zip
-  on:
-    repo: m1guelpiedrafita/LicAPI
