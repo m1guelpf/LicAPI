@@ -7,7 +7,7 @@ $licapi = $_COOKIE['licapi'];
 if (!isset($licapi['username']) OR $licapi['useragent'] != $_SERVER['HTTP_USER_AGENT']){
 logout();
 } else {
-header("Location: logs.php"); 
+header("Location: admin.php"); 
 }
 if (isset($_POST['logout'])){
 logout();
@@ -53,7 +53,7 @@ $userdata = $result->fetch_assoc();
 if (password_verify($_POST['password'], $userdata['password'])) {
     setcookie("licapi[username]", $user);
     setcookie("licapi[useragent]", $_SERVER['HTTP_USER_AGENT']);
-    header("Location: logs.php");
+    header("Location: admin.php");
     exit();
 } else {
     $errormsg = "Wrong password";
