@@ -13,3 +13,15 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+.clearfix {
+  overflow: hidden;
+}
+
+section {
+  width: 40%;
+  min-height: 200px;
+  font-size: 30px;
+  padding: 5%;
+  text-align: center;
+  float: left;
+}
