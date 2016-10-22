@@ -4,7 +4,7 @@ include ('functions.php');
 $errormsg = NULL;
 if (isset($_COOKIE['licapi'])){
 $licapi = $_COOKIE['licapi'];
-if (!isset($licapi['username']) OR $licapi['useragent'] != $_SERVER['HTTP_USER_AGENT']){
+if (!isset($licapi['username']) || $licapi['useragent'] != $_SERVER['HTTP_USER_AGENT']){
 logout();
 } else {
 header("Location: admin.php"); 
