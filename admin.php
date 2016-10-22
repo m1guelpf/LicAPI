@@ -8,7 +8,7 @@ $licapi = $_COOKIE['licapi'];
 } else {
 $licapi = NULL;
 }
-if (!isset($licapi['username']) OR $licapi['useragent'] != $licapi['useragent']){
+if (!isset($licapi['username']) || $licapi['useragent'] != $licapi['useragent']){
 logout();
 }
 $msg = NULL;
