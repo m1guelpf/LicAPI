@@ -10,7 +10,7 @@ LicAPI is an script that allows you to manage, verify and return data from your 
 
 ## Demo:
 
-You can see a demo of the script at [https://demo.miguelpiedrafita.com/LicAPI/admin.php](https://demo.miguelpiedrafita.com/LicAPI/admin.php) using username&password 'licapi' (without the '') or test the verification function at [https://demo.miguelpiedrafita.com/LicAPI/test.html](https://demo.miguelpiedrafita.com/LicAPI/test.html) or by GET at [https://demo.miguelpiedrafita.com/LicAPI/api.php?license=](ttps://demo.miguelpiedrafita.com/LicAPI/api.php?license=).
+You can see a demo of the script at [https://demo.miguelpiedrafita.com/LicAPI/admin.php](https://demo.miguelpiedrafita.com/LicAPI/admin.php) using username&password 'licapi' (without the '') or test the verification function at [https://demo.miguelpiedrafita.com/LicAPI/test.html](https://demo.miguelpiedrafita.com/LicAPI/test.html) or by GET at [https://demo.miguelpiedrafita.com/LicAPI/api.php?license=](ttps://demo.miguelpiedrafita.com/LicAPI/api.php?license=test).
 
 ## Requirements:
 
