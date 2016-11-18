@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>LicAPI</title>
+    <meta name="description" content="LicAPI is an script that allows you to manage, verify and return data from your licenses.">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="img/logo.png">
+
+    <link rel="apple-touch-icon" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/admin-toolbar.css">
+
+<div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script type="application/ld+json">{
+    "@context": "https:\/\/schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "LicAPI",
+        "logo": "https:\/\/projects.miguelpiedrafita.com\/LicAPI"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Miguel Piedrafita",
+        "description": "",
+        "image": "img/logo.png",
+        "sameAs": [
+            "https:\/\/projects.miguelpiedrafita.com\/LicAPI"
+        ]
+    },
+    "url": "",
+    "headline": "LicAPI",
+    "description": "About LicAPI",
+    "image": null,
+    "datePublished": "2016-09-06T20:41:00Z",
+    "dateModified": "2016-09-06T20:41:00Z"
+}</script>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LicAPI">
+<meta property="og:title" content="LicAPI">
+<meta property="og:description" content="LicAPI is an script that allows you to manage, verify and return data from your licenses.">
+<meta property="og:author" content="Miguel Piedrafita">
+<meta property="og:url" content="https://projects.miguelpiedrafita.com/LicAPI">
+<meta property="og:image" content="img/logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@m1guelpf">
+<meta name="twitter:title" content="LicAPI">
+<meta name="twitter:description" content="LicAPI is an script that allows you to manage, verify and return data from your licenses.">
+<meta name="twitter:creator" content="@m1guelpf">
+<meta name="twitter:url" content="https://projects.miguelpiedrafita.com/LicAPI">
+</head>
+<body class="page-template">
+
+<div id="main-content" role="main" class="pure-g-r">
+    <aside id="main-sidebar" class="pure-u-1-2">
+        <section class="sidebar-data-holder">
+            <div class="spinner" role="spinner" style="display: none;"><div class="spinner-icon"></div></div>
+            <nav class="main-nav">
+                <button class="nav-control"><i class="icon-hamburguer"></i></button>
+                <a href="https://github.com/m1guelpf">Miguel Piedrafita</a>
+                    <a href="https://projects.miguelpiedrafita.com/LicAPI">LicAPI</a>
+
+            </nav>
+            <div class="logo"><a href="#" title="LicAPI">LicAPI</a></div>
+        
+                <div class="aside-content">
+                    <header class="aside-title">A PHP API TO MANAGE LICENSE INFO</header>
+                </div>
+        
+        
+        
+        
+            <!-- Social media badges -->
+            <menu class="social-media-share">
+                <a href="https://twitter.com/m1guelpf" class="icon-twitter" rel="external" title="@m1guelp&#39;s Twitter"></a>
+                <a href="https://facebook.com/m1guelpiedrafita" class="icon-facebook" rel="external" title="m1guelpiedrafita&#39;s Facebook"></a>
+                <a href="https://github.com/m1guelpf" class="icon-github" rel="external" title="m1guelpiedrafita&#39;s Github"></a>
+            </menu>
+        
+            <footer id="main-footer"><p>Coded & Designed by <a href="https://miguelpiedrafita.com/" title="Miguel Piedrafita" rel="external">Miguel Piedrafita</a>. Theme originally designed by <a href="https://twitter.com/damianmuti" title="Go to @damianmuti&#39;s Twitter" rel="external">@damianmuti</a></p></footer>
+        </section>    </aside>
+
+    <section id="main" class="pure-u-1-2">
+        <article class="page">
+            <header class="page-header"><h1>LicAPI</h1></header>
+            <div class="page-content">
+                <h4>What is LicAPI?</h4>
+<p>LicAPI is an script that allows you to manage, verify and return data from your licenses.</p>
+<h4>Demo:</h4>
+<p>You can see a demo of the script at <a title="https://demo.miguelpiedrafita.com/LicAPI/admin.php" href="https://demo.miguelpiedrafita.com/LicAPI/admin.php">https://demo.miguelpiedrafita.com/LicAPI/admin.php</a> using username&password 'licapi' (without the '') or test the verification function at <a title="https://demo.miguelpiedrafita.com/LicAPI/test.html" href="https://demo.miguelpiedrafita.com/LicAPI/test.html">https://demo.miguelpiedrafita.com/LicAPI/test.html</a> or by GET at <a title="https://demo.miguelpiedrafita.com/LicAPI/api.php?license=test" href="https://demo.miguelpiedrafita.com/LicAPI/api.php?license=test">https://demo.miguelpiedrafita.com/LicAPI/api.php?license=test</a>.</p>
+<h4>Requirements:</h4>
+<p>- PHP &gt;4.1<br>- MySQL database</p>
+<h4>Installation:</h4>
+<ol>
+<li>Upload all the files to your server.</li>
+<li>Create a MySQL Database.</li>
+<li>Import database info from licapi.sql.</li>
+<li>Open config.php, fill your database info and change <code>$debug = false;</code> to <code>$debug = true;</code></li>
+<li>Run the script with license test (do api.php?license=test).</li>
+<li>If the script doesn't show any errors, you're OK!</li>
+<li><strong>REMEMBER TO TURN $debug BACK TO false!!!</strong></li>
+<li>Change the demo info with your own custom info using the admin.php page.</li>
+<li>Enjoy!</li>
+</ol>
+<h4>Errors:</h4>
+<p>All the interesting activity is logged to the table 'activity' with an activityId. The activityId can be used to identify errors in production or to log any strange activity. Only IP Adress, User-Agent, ActivityId and ActivityTitle is logged.</p>
+<h4>Credits:</h4>
+<ul>
+<li><a href="https://projects.miguelpiedrafita.com">Miguel Piedrafita</a></li>
+<li><a href="https://php.net">PHP</a></li>
+<li><a href="https://mysql.com">MySQL</a></li>
+</ul>
+<p>Copyright (C) Miguel Piedrafita. Use of this work is subject to Mozilla Public License 2.0</p>
+            </div>
+        </article>
+    </section>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/script.js"></script>
+    <script async="" type="text/javascript" src="https://apis.google.com/js/plusone.js?callback=gpcb"></script>
+
+</body></html>
