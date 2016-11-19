@@ -16,8 +16,8 @@ maintainers is around 1-2 days.
 
 # Bug triage
 
-* You can help report bugs by filing them [in the issues section](https://github.com/m1guelpiedrafita/LicAPI/issues/new).
-* You can look through the existing bugs [in the issues section](https://github.com/m1guelpiedrafita/LicAPI/issues).
+* You can help report bugs by filing them [in the issues section](https://github.com/m1guelpf/LicAPI/issues/new).
+* You can look through the existing bugs [in the issues section](https://github.com/m1guelpf/LicAPI/issues).
 
 * You can help us diagnose and fix existing bugs by asking and providing answers for the following:
 
@@ -39,12 +39,12 @@ This section includes any instructions or translation needs your project has.
 
 # Documentation
 
-* The documentation can be found in the README.md and in [the LicAPI website](http://projects.miguelpiedrafita.com/licapi).
+* The documentation can be found in the README.md and in [the LicAPI website](http://projects.miguelpiedrafita.com/LicAPI).
 
 # Community 
 
-* You can help us answer questions our users have [in the issues section](https://github.com/m1guelpiedrafita/LicAPI/issues/new).
-* You can help build and design our website in [the gh-pages branch](https://github.com/m1guelpiedrafita/LicAPI/tree/gh-pages).
+* You can help us answer questions our users have [in the issues section](https://github.com/m1guelpf/LicAPI/issues/new).
+* You can help build and design our website in [the gh-pages branch](https://github.com/m1guelpf/LicAPI/tree/gh-pages).
 * If you have a blog, you can help writing a post about the script.
 
 * Create an example of the project in real world by building something or
