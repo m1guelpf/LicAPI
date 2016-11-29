@@ -13,11 +13,11 @@
     /*
      * Function to format Time
      *
-     * @param string $v		 	The date to format
+     * @param string $time		 	The date to format
      */
-    function dateTimeFormat($v)
+    function dateTimeFormat($time)
     {
-        $theDateTime = date('F d, Y g:i a', strtotime($v));        // September 5, 2016 9:14 pm
+        $theDateTime = date('F d, Y g:i a', strtotime($time));        // September 5, 2016 9:14 pm
         return $theDateTime;
     }
 
