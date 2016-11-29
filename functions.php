@@ -8,7 +8,7 @@
         setcookie('licapi[username]', '', time() - 3600);
         setcookie('licapi[useragent]', '', time() - 3600);
         header('Location: login.php');
-        exit();
+        exit(401);
     }
     /*
      * Function to format Time
